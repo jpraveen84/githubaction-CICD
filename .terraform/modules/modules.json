@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"ecsIAM","Source":"./modules/iam","Dir":"modules/iam"},{"Key":"pearlALB","Source":"./modules/alb","Dir":"modules/alb"},{"Key":"pearlECS","Source":"./modules/ecs","Dir":"modules/ecs"},{"Key":"pearlVPC","Source":"./modules/vpc","Dir":"modules/vpc"},{"Key":"","Source":"","Dir":"."}]}
