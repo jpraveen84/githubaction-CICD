@@ -1,0 +1,6 @@
+.terraform/providers/
+.DS_Store
+Terraform_Scripts/.DS_Store
+Terraform_Scripts/infra_vpc_terraform/.terraform.lock.hcl
+Terraform_Scripts/infra_vpc_terraform/.terraform/*
+terraform.tfstate.old
