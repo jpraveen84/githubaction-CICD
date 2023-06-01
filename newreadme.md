@@ -131,7 +131,9 @@ Replace with respective values and save the file
 
 Clone the repo (master branch) and change the working directory to iac
 
-```cd iac
+```
+cd iac
+
 ```
 
 ## Step 2
@@ -142,8 +144,9 @@ please be cautious on changing values in demo.tfvars.
 
 __Mandatory Values to Change__
 
-```account_id
-   aws_profile
+```
+account_id
+aws_profile
 ```
 
 
@@ -159,7 +162,9 @@ Make sure you are in correct directory ie __iac__ and run the below command
 
 Once the plan is successful run the below command to create the infra 
 
-```terraform apply -var-file=demo.tfvars -auto-approve
+```
+terraform apply -var-file=demo.tfvars -auto-approve
+
 ```
 
 ## Step 5 
@@ -189,7 +194,9 @@ We created the SSM inventory to login to server
 
 1. Configure the AWS profile using command
 
-``` aws configure
+``` 
+aws configure
+
 ```
 
 2. Install the ssm plugin in host
@@ -199,5 +206,7 @@ We created the SSM inventory to login to server
 
 2. Get the instance ID to login and run the below command 
 
-```aws ssm start-session --target <instance_id> --profile <profile_name> --region ap-southeast-2
+```
+aws ssm start-session --target <instance_id> --profile <profile_name> --region ap-southeast-2
+
 ```
