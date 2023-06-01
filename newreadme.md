@@ -40,6 +40,8 @@ In this demo we are aligned with approach 2
 
 ### Directory Structure
 
+We are created all the configurstion files in __iac__ folder
+
 ```└── iac
     ├── files
     │   └── bash
@@ -61,4 +63,27 @@ In this demo we are aligned with approach 2
         ├── ssh_key
         ├── subnet
         └── vpc
+```
+
+
+## Handelling terraform statefile.
+
+In this demo we not locking the terraform statefile. If you want to have the locking mechanism. Create a S3 buckek and dynamo DB table and uncomment the below lines in the __/iac/main.tf__ file
+
+``` clone the repo
+    cd iac
+    vim main.tf
+```
+
+Replace with respective values and save the file 
+
+```# terraform {
+#   backend "s3" {
+#     bucket         = "< Replace with Bucket name >"
+#     key            = "terraform.tfstate"
+#     region         = "< Replace with region >"
+#     dynamodb_table = "< Replace with dynamoDB table >"
+#     profile = "< Replace with your profile >"
+#   }
+# }
 ```
